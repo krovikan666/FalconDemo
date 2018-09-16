@@ -8,8 +8,8 @@ Falcon is required [https://github.com/falconry/falcon], as well as a WSGI serve
 ## Usage
 Once you have cloned the repo open a command prompt and navigate to the repo directory.
 
-1. waitress-serve --port=8000 rest:app
-2. http://127.0.0.1:8000/test?test=test   
+1. waitress-serve --port=8000 webapp:app
+2. http://127.0.0.1:8000/api/test?test=test   
 
 ## Result
 
