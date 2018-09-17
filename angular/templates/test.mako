@@ -6,7 +6,7 @@
 <script>
 var app = angular.module("testApp", []);
 app.controller("testCtrl", function($scope, $http) {
-    $http.get('http://127.0.0.1:8000/api/test?test-key=test-vaule', {test: 'test'}).then(function(resp) {
+    $http.get('${api_uri}', {}).then(function(resp) {
       $scope.data = resp.data;
     });
 });

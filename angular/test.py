@@ -11,6 +11,7 @@ class TestAngularApp:
     def on_get(self, request, response):
         """getter for the API call"""
 
+        api_uri = request.prefix + '/api/test?test-key=test-value'
         response.status = HTTP_200
         response.content_type = 'text/html'
-        response.body = self.test_template.render()
+        response.body = self.test_template.render(api_uri=api_uri)
